@@ -14,7 +14,7 @@ fn view(app: &App, _model: &Model, frame: Frame) {
 	let draw = app.draw();
 
 	// Clear the background to blue.
-	draw.background().color(BLACK);
+	draw.background().color(WHITE);
 
 	// Create an `ngon` of points.
 	let n_points = 5;
@@ -30,7 +30,7 @@ fn view(app: &App, _model: &Model, frame: Frame) {
 		.x(-win.w() * 0.25)
 		.color(WHITE)
 		.rotate(-t * 0.1)
-		.stroke(PINK)
+		.stroke(GREEN)
 		.stroke_weight(20.0)
 		.join_round()
 		.points(points);
